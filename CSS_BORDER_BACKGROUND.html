@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS border and background</title>
+    <style>
+        #First{
+            background-color: rgb(57, 197, 45);
+            height: 70px;
+            width: 350px;
+            /* border-radius: 5px;
+            border-width: 2px;
+            border-color: brown;
+            border-style: dotted; 
+            This is all return into one*/
+            border: 2px solid red;
+         }
+        #second{
+            background-color: rgb(57, 197, 45);
+            height: 70px;
+            width: 350px;
+            border-top:2px solid firebrick;
+            border-bottom: 4px dotted pink;
+            border-left: 5px solid turquoise;
+            border-right: 5px dotted brown;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+         }
+         #third{
+             height:450px;
+             width: 450px;
+             background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png');
+             /* background-repeat: repeat-y; this will repeat image into x and y axis respectively*/
+             border: 2px solid red ;
+             background-repeat: no-repeat;
+             /* background-position: 192px 25px; */
+             background-position: center top;
+         }
+        
+    </style>
+</head>
+<body>
+    <h3>Css bordr and back</h3>
+    <p id="First">this is used for background and borders</p>
+    <p id="second">this is used for background with indiviual border and borders</p>
+    <p id="third">this is used for background image</p>
+</body>
+</html>

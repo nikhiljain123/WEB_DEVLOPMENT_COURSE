@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibilty and z-index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            position: relative;
+            top: 49px;
+            background-color: grey;
+            z-index: 34;
+        }
+        #box2{  
+            position: relative;
+            top: 14px;
+            z-index: 35;
+            /* when z-inde of one is higher than other it will come top of IT*/
+            /* z-index NOT WORK IN STATICS POSITION */
+            background-color: rgb(236, 214, 15);
+            /* using visibility we can hide particular box or an element */
+            /* visibility are by default is VISIBLE or using HIDDEN we can remove element 
+             and space are reseved in visibility */
+            /* visibility:hidden; */
+            /* if we wan't to remove space with element than we are using DISPLAY */
+            /* display:none; */
+        
+        }
+        #box3{background-color: rgb(17, 231, 231);}
+        #box4{background-color: rgb(169, 17, 230);}
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

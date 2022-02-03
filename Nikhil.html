@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to use  Emmet</title>
+</head>
+<body>
+    <h1>
+        This  is  starting 
+    </h1>
+    <p>
+        <!-- THe Use of lorem is to give as much as we need like lorem23 for 23 word-->
+        Lorem <strong>This the use of strong tag</strong>ipsum dolor  sit.
+    </p>
+     <!-- if we need more than one paragraph than we simpliy use P*4 -->
+    <p>
+        this time we Use
+        br tag to <br> to break the line.
+        we are also use HR tag to horizontal line 
+    </p>
+    <hr>
+    <p><!-- using tag like a and image --> -->
+        for use link in the webpage "a" and enter <br>
+        Also we use alt to select multiple line and change all at one <br>
+        "_blank " this will help for open the website into new teb <br>
+        <a href="https://google.com" target="_blank">go to google</a> <br>
+        <a href="https://facebook.com" target="_blank">go to facebook</a> <br>
+        <a href="https://twitter.com" target="_blank">go to twitter</a> <br>
+        <a href="https://linkedin.com" target="_blank">go to linkedin</a> <br>
+        <a href="Nikhil1.html" target="_blank">go to nikoki jay</a> <br>
+        <hr>
+        "img" and enter into there is "src"and "alt"<br>
+        which use for address of image and if not show the <br>
+        image text to show<br>
+        after this we add image into webpage using <br>
+        <img src="" alt="jo he wo he baki pata nahi">
+    </p>
+    <hr>
+    <p>   <!-- LIST -->
+        <ul type="disc">
+            <li>Now we first add the undorder list</li>
+            <li>Now we second add the undorder list</li>
+            <li>Now we third add the undorder list</li>
+        </ul>
+        <ol type="A">
+            <li>Now we first add the ordered list</li>
+            <li>Now we second add the ordered list</li>
+                <ol type="a">
+                    <li>this the sub list</li>
+                    <li>and we</li>
+                    <li>can use it for</li>
+                </ol>
+            <li>Now we third add the ordered list</li>
+        </ol>
+        <hr>
+        <!-- TABLE -->
+        <h3>HTML TABLE</h3>
+        <table>
+        <thead>
+           <tr> 
+                <th>Name</th>
+                <th>CLASS</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nikhil</td>
+                <td>1year</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>gupta</td>
+                <td>2year</td>
+                <td>45000</td>
+            </tr>
+            <tr>
+                <td>pira</td>
+                <td>4year</td>
+                <td>50000</td>
+            </tr>
+        </tbody>
+        </table>
+    </p>
+    <hr>
+    <p> <!-- form and input tag -->
+        <form action="Nikokijay.php">
+            <label for="name">Name:</label>
+          <div>
+            <input type="text" name="Myname" id="name">
+           </div>
+           <br>
+          <div>
+            Role :<input type="text" name="Myrole">
+           </div>
+           <br>
+          <div>
+            Email:<input type="email" name="myEmail">
+           </div>
+           <br>
+          <div>
+            Date:<input type="date" name="myDate">
+           </div>
+           <br>
+           <div>
+               bonus:<input type="number" name="mybonus">
+            </div>
+            <br>
+            <div>
+                <label for="yahape">are you eligible:</label>  
+                <input type="checkbox" name="myeligibility" id="yahape">
+            </div>
+            <br>
+            <div>
+                Gender:Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+            </div>
+            <br>
+            <div>
+               Teri margi ho utana likh <br><textarea name="Mytext" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="car">CAR</label>
+                <select name="Mycar" id="car">
+                    <option value="sen">sentro</option>
+                    <option value="bmw">BMW</option>
+                    <option value="mer">mercedies</option>
+                </select>
+            </div>
+            <br>
+            <div>
+             Submit: <input type="submit" value="Submit now">
+             Reset: <input type="reset" value="Reset now">
+             </div>
+             <br>
+            
+        </form>
+    </p>
+    <hr>
+    <p> <!-- INLINE AND BLOCK ELEMENTS
+     paragraph is block element because the aquire whole space
+        and inline aquire only those which they required 
+        div, p are block and div,a,strong are inline-->
+        <p>this is a paragraph</p>
+        <p>this is a paragraph</p>
+        <span>this is INLINE </span><span>this is also an INLINE</span>
+    </p>
+    <hr>
+    <p> <!-- IDS and Classes IN HTML
+        Ek class ko 100jagaha laga sakte he per ekk ID ka element to ekk hi 
+        hoga -->
+        <!-- THERE ARE SOME IMPORTANT 
+        USEFULL FOR CLASS IS 
+        FOR "ID" USE"#"
+        FOR "CLASS"USE"." 
+        help of EMMET -->
+        <div id="mainbox" class="redbg">
+            this is mainbox
+        </div>
+        <!-- Emmet takes dic tag as default -->
+        <!-- .redbg press ENTER -->
+        <div class="redbg"></div>
+        <!-- Createing multiple elements using EMMET -->
+        <!-- span.myclass.myclass2.myclass3*4 -->
+           <span class="myclass myclass2 myclass3">First</span>
+           <span class="myclass myclass2 myclass3">second</span>
+           <span class="myclass myclass2 myclass3">third</span>
+           <span class="myclass myclass2 myclass3">fourth</span>
+    </p>
+    <hr>
+    <p> <!-- HTML ENTITIES -->
+        <div class="container">
+            <p>this is a  paragraph</p>
+        </div>
+        <div class="container">
+        <p>this are the entities used for reserved char like space how  to print space &nbsp;&nbsp;&nbsp;&nbsp; ab kya ye accha lagata he </p>
+        <p>paragraph is written like this &lt;p&gt;</p>
+        <p>pound is written like this &pound;</p>
+    </div>
+    </p>
+    <hr>
+    <p><!-- SEMANTIC TAGS IN HTML  -->
+        <details>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, odit perspiciatis id debitis fugit veritatis pariatur nulla, labore necessitatibus aspernatur cum nam perferendis, ipsum dolorem tempore itaque quia? Sapiente tempora blanditiis expedita quidem dignissimos?</details>
+
+    </p>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadoow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid red; */
+        background-color: blanchedalmond;
+
+        /* box-shadow: offset-x offset-y blur-radius spread-radius colors; */
+        
+        /* box-shadow: 7px 5px rgb(0, 60, 128); This is for Bottom and right */
+        /* box-shadow: -7px -5px rgb(0, 60, 128); and when we using negative this will so we use top and left */
+        /* box-shadow: 7px 5px 10px rgb(0, 60, 128); we are using 10px for bulr the shadow*/
+        /* box-shadow: -7px -5px 10px rgb(0, 60, 128); */
+        /* box-shadow: 7px 5px 10px 10px rgb(0, 60, 128);we are using 10px for spredding the shadow */
+        /* box-shadow: 7px 5px 10px 10px rgba(0, 128, 0, 0.8); */
+        box-shadow: 9px 10px rgba(0, 128, 0, 0.8),14px 16px red;
+        /* box-shadow: inset 10px 10px rgb(0, 162, 255);the insert will increase shadow indise frame */
+    }
+    .card h2{
+        /* text-shadow: 2px 3px rgb(0, 245, 12); */
+        text-shadow: 2px 3px 5px rgb(0, 245, 12);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2> This CARD1 value</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, modi. Suscipit repellendus, animi dolor ea numquam eveniet inventore nam libero cum qui minus nostrum debitis mollitia sint aperiam non est distinctio eaque officia possimus!</p>
+        </div>
+        <div class="card" id="car-2"> 
+            <h2> This is CARD2 value</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, modi. Suscipit repellendus, animi dolor ea numquam eveniet inventore nam libero cum qui minus nostrum debitis mollitia sint aperiam non est distinctio eaque officia possimus!</p>
+        </div>
+        <div class="card" id="car-3"> 
+            <h2> This is CARD3 value</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, modi. Suscipit repellendus, animi dolor ea numquam eveniet inventore nam libero cum qui minus nostrum debitis mollitia sint aperiam non est distinctio eaque officia possimus!</p> 
+        </div>
+       
+    </div>
+</body>
+</html>

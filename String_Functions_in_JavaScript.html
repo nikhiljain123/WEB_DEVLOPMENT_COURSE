@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function in JavaScript</title>
+</head>
+<body>
+    <script>
+        var str="this is a string";
+        console.log(str);
+
+        // indexOf() function is used here to locate the position of any string It gives the first occurrence of the substring.
+        //  Here the position of “is” is 2, therefore the output will be as follows-
+        var pos=str.indexOf('is');
+        console.log(pos);
+
+        pos=str.lastIndexOf('is');
+        console.log(pos)
+
+        // To get the position of the last substring, we can use the function lastIndexOf() as follows
+        var substr= str.slice(1,9);
+        console.log(substr)
+        var substr1=substr.slice(1,4);
+        console.log(substr1)
+
+        // We can also replace a particular string to another string with the help of replace() function as follows-
+        var replaced=str.replace('string','NIKO');
+        console.log(str)
+        console.log(replaced)
+  
+        // We can also convert the whole strong to an uppercase or lowercase letters as shown below-
+        console.log(str.toUpperCase());
+        console.log(replaced.toLowerCase());
+
+        // To concat any two strings, we can take the help of concat() function as follows-
+        var newstr=replaced.concat(" and you can give to him");
+        console.log(newstr)
+
+        // To remove all the white spaces in the string, we can use trim() function as shown below
+        var trimstr="  This containes some whitespace   ";
+        console.log(trimstr)
+        console.log(trimstr.trim())
+
+        // To extract any character from a string, we can use charAt() function as follows-
+       var char2=str.charAt(2);
+       console.log(char2)
+
+       console.log(str[3])
+  </script>
+</body>
+</html>

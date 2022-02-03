@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, If-else Conditionals & Switch Case in JavaScript</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>ITEM-1</li>
+            <li>ITEM-2</li>
+            <li>ITEM-3</li>
+            <li>ITEM-4</li>
+            <li>ITEM-5</li>
+            <li>ITEM-6</li>
+            <li>ITEM-7</li>
+        </ul>
+    </div>
+    <script>
+        // var str1="This is a String1";
+        // console.log(str1);
+
+        // var str1="This is a String2";
+        // console.log(str1);
+
+        // if we declare the var inside any function, then its scope will remain under that function. 
+        // let a="u";
+        //     {
+        //     let a="anything";
+        //     console.log(a)
+        //     }
+        //     console.log(a)
+
+        // we have declared a as a constant, therefore,
+        //  its value cannot be changed further by any means.
+        //   Hence, it shows an error.
+            // const a="this Cannot be changed";
+            // // a="I want to change  this.This cannot be changed";
+            // console.log(a);
+
+            let age=33;
+                if(age<12){
+                    console.log("you are boy");
+                }
+                else if(age>12 && age<20){
+                    console.log("you are teen");
+                }
+                else if( age==33){
+                    console.log("correct you find my age is "+age);
+                }
+            
+        const cups=22;
+                switch(cups){
+                    case 4:
+                        console.log("this Value of cups is 4")
+                        break;
+                    case 22:
+                        console.log("this value of cups is 22")
+                        break;
+                    case 44:
+                        console.log("this value of cup is 44")
+                        break;
+                    default:
+                        console.log("th vlaue of cups is none of above")
+                        break;
+                }
+
+
+    </script>
+</body>
+</html>
