@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation The DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More About US</li>
+            <li>Contact US</li>
+        </ul>
+    </div>
+</body>
+    <div class="container">
+        After one more container
+    </div>
+<script>
+
+    // By writing getElementById, we can target the HTML through its id
+    let main=document.getElementById('main');
+    console.log(main);
+
+    let nav=document.getElementById('nav');
+    console.log(nav);
+
+    // The easiest way to get the content of an element is by using the innerHTML property
+    let containers=document.getElementsByClassName('container');
+    console.log(containers);
+
+    // we can see two container class as have made two container classes. 
+    // But if we write as container(0) or container(1)
+
+    // If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the querySelector()  method.
+    let sel=document.querySelector('.container');
+    console.log("Selector returnss",sel)
+
+    let sel1=document.querySelector('#nav');
+    console.log("Selector returnss",sel1)
+
+    let sel2=document.querySelector('#nav>li');
+    console.log("Selector returnss",sel2)
+
+    let sel3=document.querySelectorAll('#nav>li');
+    console.log("Selector returnss",sel3)
+</script>
+</html>
