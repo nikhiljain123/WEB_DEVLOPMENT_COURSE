@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Listening to Events </title>
+</head>
+<style>
+    #btn{
+        padding:10px 14px;
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+}
+</style>
+<body>
+    <!-- Onchange-  An HTML element has been changed
+    Onclick- The user clicks an HTML element
+    Onmouseover-   The user moves the mouse over an HTML element
+    Onmouseout-The user moves the mouse away from an HTML element
+    Onkeydown- The user pushes a keyboard key
+    Onload- The browser has finished loading the page -->
+
+      <!-- Browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit 
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+    <div class="container">
+        <h1>Thi is my headng</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consequatur iusto laboriosam quod dolorum, deleniti veritatis iure, provident sint illum perferendis at. Voluptates, voluptatibus!</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            console.log('mouse Inside')
+        });
+        para.addEventListener('mouseout',function run(){
+            console.log('Mouse Now went outside')
+        });
+
+    function toggleHide(){
+        let btn=document.getElementById('para');
+        if(para.style.display!='none'){
+            para.style.display='none';
+        }
+        else{
+            para.style.display='block';
+        }
+    }
+    </script>
+</body>
+</html>
