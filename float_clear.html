@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family:'Ubuntu','The Nautigal', 'cursive', sans-serif;
+        }
+        .contain{
+               width: 1020px;
+               border: 7px solid maroon;
+               margin: 40px auto;
+               background-color: springgreen;
+        }
+        .item{
+            border: 4px solid blue ;
+            margin: 4px 6px;
+            padding: 12px 4px;
+            background-color: rgb(205, 236, 25);
+        }
+        #fruits{
+                float: left;
+                width: 48%;
+        }
+        #computer{
+                float: right;
+                width: 48%;
+        }
+        #stationary{
+                /* float:left; */
+                /* if we using "clear" so the parameter overlap is left */
+                 clear: both; /*jo bhi left he vo stationary ko tang na kare int his situation the right one is overlap so we use CLEAR BOTH */
+                width: 99%;
+        }
+        p,h3{
+            /* text-align: right;            
+            text-align: left; */
+            text-align: justify;            
+        }
+        h1{
+            margin: auto;
+            width: 440px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+             <h1>WELCOME MY STORE</h1>
+        <div id="fruits" class="item">
+            <h3>thier are so much fruits</h3>
+            <p id="fruitsid" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam optio repudiandae exercitationem, at rerum laudantium in tempora sed accusamus eius soluta quasi alias unde Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aperiam, rerum quas nisi adipisci magnam in dolores. Optio nostrum voluptatibus deserunt libero aspernatur blanditiis suscipit quis nobis doloremque! Corporis beatae dolore vero officiis nulla? voluptatibus ducimus, quia maxime nesciunt repellendus.</p>
+        </div>
+      <div id="computer" class="item">
+            <h3>thier are so much computers</h3>
+            <p id="computeritem" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam optio repudiandae exercitationem, at Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ut! Consequatur iusto placeat aperiam veritatis quas atque ullam accusamus? Animi possimus doloremque molestiae debitis pariatur aperiam explicabo! Accusamus ipsum a, architecto sed omnis optio. rerum laudantium in tempora sed accusamus eius soluta quasi alias unde voluptatibus ducimus, quia maxime nesciunt repellendus.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>thier are so much stationary</h3>
+            <p id="stationaryitem" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam optio repudiandae exercitationem, at rerum laudantium in tempora sed accusamus eius soluta quasi alias unde voluptatibus ducimus, quia maxime nesciunt repellendus.</p>
+        </div>
+    </div>
+</body>
+</html>

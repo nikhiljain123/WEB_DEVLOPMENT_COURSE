@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selcetor</title>
+</head>
+<style>
+    h1{
+        background-color: cornsilk;
+        text-align: center;
+        font-weight: bold;
+        color: rgb(17, 220, 247);
+    }
+    /* div p{
+        color: blue;
+        background-color: pink ;
+        font-weight: bold;
+    } */
+    /* this mean their is a div and inside li and inside p to perform action */
+    /* div li p{
+        color: rgb(0, 255, 76);
+        background-color: rgb(5, 59, 235) ;
+        font-weight: bold;
+    } */
+    /* This is because the direct child of Div is p than only its effect this ">" */
+    /* div > p{
+        color: blue;
+        background-color: pink ;
+        font-weight: bold;
+    } */
+    /* This is using when there privous element is Div than use "+" */
+    div + p{
+        color: blue;
+        background-color: pink ;
+        font-weight: bold;
+    }
+    
+</style>
+
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This a one  of first paragraph inside li</p></li>
+                <li>this is will not affect to this li</li>
+            </ul>
+            <p>This is second paragraph</p>
+        </div>
+        <p>This third paragraph outside div</p>
+    </div>
+    <p>This is the forth paragraph in Body</p>
+</body>
+</html>

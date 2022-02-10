@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 59, 59);
+    }
+    header::before{
+        background: url(https://images.unsplash.com/photo-1543378993-e0041dcb24cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHRoZSUyMHNvdXJjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60)
+        no-repeat center center/cover;
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: -1;
+         opacity: 0.9;
+    }
+
+    .navigation {
+        font-size: 20px;
+        display: flex;
+    }
+
+    li {
+        list-style: none;
+        padding: 20px 23px;
+    }
+
+    section {
+        height: 344px;
+        justify-content: center;
+        margin: 3px 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 4rem;
+    }
+
+    /* section::before{
+        content: "this is a content show before section";
+    }
+    section::after{
+        content: "this is a content after the section";
+    } */
+    p {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+       
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+  
+    </header>
+    <section>
+        <h3>This is welcome world of coding</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In velit ipsam, ut minus nulla odit qui aliquam
+            voluptates, facere nemo dolores explicabo molestiae. Tempore iusto dignissimos temporibus. Iste, dolorum
+            consequatur!</p>
+    </section>
+
+</body>
+
+</html>

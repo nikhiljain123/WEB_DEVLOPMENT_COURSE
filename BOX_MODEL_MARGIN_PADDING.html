@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box MOdel</title>
+    <style>
+        *{
+            /* this is universal selector 
+            this is by default value*/
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .contain{
+                background-color: rgb(243, 63, 9);
+                border: 10px solid rgb(25, 219, 25);
+                /*we are create single line for margin and padding isted of using left right and top ,buttom
+                 padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+                padding-right: 30px; */
+                /* this like top right bottom left */
+                /* padding: 30px 40px 70px 60px;  */
+                 /*padding: y(top/bottom) x(left/right)*/
+                padding: 40px 40px;
+                 border-radius: 70px;
+                margin: 23px 23px;
+                width: 430px;
+                /* box-sizing: border-box; */
+                }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <h3>This is my headling</h3>
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis deleniti id saepe commodi provident? Dolorum amet corrupti eaque ex quo.</p>
+    </div>
+    <div class="contain">
+        <h3>This is my headling</h3>
+        <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis deleniti id saepe commodi provident? Dolorum amet corrupti eaque ex quo.</p>
+    </div>
+    <div class="contain">
+        <h3>This is my headling</h3>
+        <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis deleniti id saepe commodi provident? Dolorum amet corrupti eaque ex quo.</p>
+    </div>
+</body>
+</html>

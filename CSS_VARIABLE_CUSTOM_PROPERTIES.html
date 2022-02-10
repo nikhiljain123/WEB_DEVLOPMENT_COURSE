@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variable/custom properties</title>
+<style>
+    :root{
+        /* This is use as global variable in all function */
+        --box-color:rgb(214, 26, 58);
+        --box-color1:rgb(145, 248, 10);
+        --maxh:340px;
+        --maxw:330px
+    }
+    .box{
+            /* --box-color:rgb(17, 0, 255); */
+        /* This is for create variable only for the particular scope  */
+        width: 200px;
+        height: 200px;
+        background-color: var(--box-color);
+        margin: 2px 9px;
+        border: 15px solid var(--box-color1);
+        box-shadow:2px 4px var(--box-color1);
+    }
+    .container{
+        max-height: var(--maxh);
+        max-width: var(--maxw);
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background-color: var(--box-color);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

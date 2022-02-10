@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction - Alert, Prompt, Confirm </title>
+</head>
+<body>
+    <script>
+        // Alert in in-browser JavaScript - Does not return anything
+        alert("Pheli Fursat me nikal");
+
+        // Prompt in JS
+        let name=prompt("what is your name?","Guest");
+        console.log(name);
+
+        // Confirm in JS
+        let deletePost=confirm("DO you really want to delete this post?");
+
+        console.log(deletePost);
+        if(deletePost){
+            console.log("Your post has been deleted successfully");
+        }
+        else{
+            console.log("your post has not been deleted");
+        }
+    </script>
+</body>
+</html>
